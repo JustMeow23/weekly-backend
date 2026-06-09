@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:40px">
+<p>Открываем приложение Weekly…</p>
+<p><a href="__DOWNLOAD_HREF__">Не открылось? Скачать приложение</a></p>
+<script>
+  var appUri = __APP_URI__, download = __DOWNLOAD__;
+  var t = setTimeout(function(){ window.location = download; }, 1500);
+  window.addEventListener('pagehide', function(){ clearTimeout(t); });
+  window.location = appUri;
+</script>
+</body></html>
